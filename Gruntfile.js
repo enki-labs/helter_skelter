@@ -3,7 +3,7 @@ module.exports = function (grunt)
 
     config = {
 
-        create_src: "mkdir -p src; cd src; if [ -d helter_skelter ]; then git pull; else git clone https://github.com/enki-labs/helter_skelter.git; fi"
+        create_src: "mkdir -p src; cd src; if [ -d helter_skelter ]; then cd helter_skelter; git pull; else git clone https://github.com/enki-labs/helter_skelter.git; fi"
 
     };
 
